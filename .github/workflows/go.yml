@@ -39,6 +39,19 @@ jobs:
         ./server &
         echo "SERVER_PID=$!" >> $GITHUB_ENV
         sleep 5
+        
+        echo "Server's inside status:"
+        ps -p $SERVER_PID || echo "No such process"
+        
+        echo "Checking port 50051"
+        netstat -tulpn | grep :50051 || echo "Server?"
+        
+        echo "Server output (first 50 lines)"
+        head -50 server_output.log || echo "SERVER?"
+        
+        echo "Checking if server is alive"
+        # Try a simple TCP connection
+        timeout 5 bash -c 'cat < /dev/null > /dev/tcp/localhost/50051' && echo "Port 50051 is open" || echo "SERVEEEEER!"
 
     - name: Waiting for server to be healthy
       working-directory: "./backend/productService"
