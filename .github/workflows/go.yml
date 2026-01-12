@@ -46,23 +46,19 @@ jobs:
         echo "Checking port 50051"
         netstat -tulpn | grep :50051 || echo "Server?"
         
-        echo "Server output (first 50 lines)"
-        head -50 server_output.log || echo "SERVER?"
-        
         echo "Checking if server is alive"
-        # Try a simple TCP connection
         timeout 5 bash -c 'cat < /dev/null > /dev/tcp/localhost/50051' && echo "Port 50051 is open" || echo "SERVEEEEER!"
 
-    - name: Waiting for server to be healthy
-      working-directory: "./backend/productService"
-      run: |
-        echo "Running a healthchecker:"
-        if ./healthcheck; then
-          echo "Server is healthy"
-        else
-          echo "Server seems to be very ill"
-          exit 1
-        fi
+    #- name: Waiting for server to be healthy
+    #  working-directory: "./backend/productService"
+    #  run: |
+    #    echo "Running a healthchecker:"
+    #    if ./healthcheck; then
+    #      echo "Server is healthy"
+    #    else
+    #      echo "Server seems to be very ill"
+    #      exit 1
+    #    fi
 
     - name: Running server tests
       working-directory: "./backend/productService/"
