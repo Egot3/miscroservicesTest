@@ -4,8 +4,8 @@ import (
 	"log"
 	"net"
 
-	"github.com/Egot3/microservicesTest/product-service/internal"
-	pb "github.com/Egot3/microservicesTest/proto/gen"
+	"github.com/Egot3/microservicesTest/backend/productService/internal"
+	pb "github.com/Egot3/microservicesTest/backend/apiContracts"
 	"google.golang.org/grpc"
 )
 

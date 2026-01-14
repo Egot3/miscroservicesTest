@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ecommerce; //what a name
 
-option go_package = "./";
+option go_package = "github.com/Egot3/microservicesTest/apiContracts";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/timestamp.proto";

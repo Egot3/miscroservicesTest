@@ -4,7 +4,7 @@
 // 	protoc        v6.33.1
 // source: product.proto
 
-package __
+package apiContracts
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -383,7 +383,7 @@ const file_product_proto_rawDesc = "" +
 	"\n" +
 	"GetProduct\x12\x1c.ecommerce.GetProductRequest\x1a\x1d.ecommerce.GetProductResponse\x12R\n" +
 	"\rCreateProduct\x12\x1f.ecommerce.CreateProductRequest\x1a .ecommerce.CreateProductResponse\x12E\n" +
-	"\vHealthCheck\x12\x16.google.protobuf.Empty\x1a\x1e.ecommerce.HealthCheckResponseB\x04Z\x02./b\x06proto3"
+	"\vHealthCheck\x12\x16.google.protobuf.Empty\x1a\x1e.ecommerce.HealthCheckResponseB1Z/github.com/Egot3/microservicesTest/apiContractsb\x06proto3"
 
 var (
 	file_product_proto_rawDescOnce sync.Once

@@ -4,7 +4,7 @@
 // 	protoc        v6.33.1
 // source: order.proto
 
-package __
+package apiContracts
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -1227,7 +1227,7 @@ const file_order_proto_rawDesc = "" +
 	"\x11UpdateOrderStatus\x12#.ecommerce.UpdateOrderStatusRequest\x1a$.ecommerce.UpdateOrderStatusResponse\x12D\n" +
 	"\x12StreamOrderUpdates\x12\x1a.ecommerce.GetOrderRequest\x1a\x10.ecommerce.Order0\x01\x12S\n" +
 	"\x10BulkCreateOrders\x12\x1d.ecommerce.CreateOrderRequest\x1a\x1e.ecommerce.CreateOrderResponse(\x01\x12L\n" +
-	"\x10ChatOrderSupport\x12\x19.ecommerce.SupportMessage\x1a\x19.ecommerce.SupportMessage(\x010\x01B\x04Z\x02./b\x06proto3"
+	"\x10ChatOrderSupport\x12\x19.ecommerce.SupportMessage\x1a\x19.ecommerce.SupportMessage(\x010\x01B1Z/github.com/Egot3/microservicesTest/apiContractsb\x06proto3"
 
 var (
 	file_order_proto_rawDescOnce sync.Once

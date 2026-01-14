@@ -4,7 +4,7 @@
 // - protoc             v6.33.1
 // source: product.proto
 
-package __
+package apiContracts
 
 import (
 	context "context"

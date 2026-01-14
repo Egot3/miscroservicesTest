@@ -1,4 +1,4 @@
-module github.com/Egot3/microservicesTest/product-service
+module github.com/Egot3/microservicesTest/backend/productService
 
 go 1.25.5
 
@@ -7,10 +7,8 @@ require (
 	google.golang.org/protobuf v1.36.11
 )
 
-replace github.com/Egot3/microservicesTest/proto/gen => ../proto/gen
-
 require (
-	github.com/Egot3/microservicesTest/proto/gen v0.0.0-00010101000000-000000000000
+	github.com/Egot3/microservicesTest/apiContracts v0.0.0-00010101000000-000000000000
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sys v0.38.0 // indirect
 	golang.org/x/text v0.31.0 // indirect

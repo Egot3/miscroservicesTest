@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	pb "github.com/Egot3/microservicesTest/proto/gen"
+	pb "github.com/Egot3/microservicesTest/backend/apiContracts"
 )
 
 type OrderServer struct {

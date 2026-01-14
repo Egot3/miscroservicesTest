@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/Egot3/microservicesTest/proto/gen"
+	pb "github.com/Egot3/microservicesTest/backend/apiContracts"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )
